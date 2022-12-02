@@ -1,0 +1,21 @@
+4a -> 
+SELECT * 
+FROM order 
+ORDER BY id ASC;
+
+4b -> 
+SELECT a.cust_name 
+FROM customer a 
+JOIN order b 
+ON a.id = b.cust_id 
+WHERE b.prod_id="A101" 
+OR b.prod_id="A103";
+
+4c ->
+SELECT c.id, c.prod_name, c.prod_amount, c.vendor_id 
+FROM product c 
+JOIN b order 
+ON c.id = b.prod_id 
+JOIN a customer 
+ON a.id = b.cust_id 
+WHERE a.cust_name ="budi";
